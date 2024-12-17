@@ -1,14 +1,7 @@
-wallet = 25
-socks = 0
-
-for price in range(10):
-    if wallet >= price:
-        wallet = wallet - price
-        socks = socks + 1
+time = 8
+for i in range(8):
+    if time > 5:
+        time = time - 1
     else:
+        print(time, "seconds")
         break
-        
-if ( socks % 2 == 0 ):   # fill in this condition 
-    print("I can pair my socks")
-else:
-    print("I need one more ...")
